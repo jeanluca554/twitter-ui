@@ -1,4 +1,5 @@
 import { ArrowClockwise, ChatCircle, Heart } from "phosphor-react";
+import { Link } from "react-router-dom";
 import "./Tweet.css";
 
 interface TweetProps {
@@ -7,7 +8,7 @@ interface TweetProps {
 
 export function Tweet(props: TweetProps) {
     return (
-        <a className="tweet">
+        <Link to="/status" className="tweet">
             <img src="https://github.com/jeanluca554.png" alt="Jean Luca" />
 
             <div className="tweet-content">
@@ -38,6 +39,6 @@ export function Tweet(props: TweetProps) {
 
                 </div>
             </div>
-        </a>
+        </Link>
     )
 }
